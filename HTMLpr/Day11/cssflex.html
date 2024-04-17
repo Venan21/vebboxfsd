@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+<style>
+    .main{
+        display:flex;
+        border:1px solid black; 
+        /* height:800px;width: 800px; */
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .img{
+        height: 100px; width:100 px;
+        /*justify-content: center;
+        align-items: center; */
+   }
+    .a1,.a3,.a5,.a7,.a9,.a11,.a13,.a15,.a17,.a19,.a21,.a23,.a25,.a27,.a29,.a31,.a33,.a35,.a37,.a39,.a41,.a43,.a45,.a47,.a49,.a51,.a53,.a55,.a57,.a59,.a61,.a63,.a2,.a4,.a6,.a8,.a10,.a12,.a14,.a16,.a18,.a20,.a22,.a24,.a26,.a28,.a30,.a32,.a34,.a36,.a38,.a40,.a42,.a44,.a46,.a48,.a50,.a52,.a54,.a56,.a58,.a60,.a62,.a64{
+        height: 100px;
+        width: 100px;
+        border:1px solid black;
+         }
+    .a1,.a3,.a5,.a7,.a10,.a12,.a14,.a16,.a17,.a19,.a21,.a23,.a26,.a28,.a30,.a32,.a33,.a35,.a37,.a39,.a42,.a44,.a46,.a48,.a49,.a51,.a53,.a55,.a58,.a60,.a62,.a64{
+        background-color: white;
+    }
+    .a2,.a4,.a6,.a8,.a9,.a11,.a13,.a15,.a18,.a20,.a22,.a24,.a25,.a27,.a29,.a31,.a34,.a36,.a38,.a40,.a41,.a43,.a45,.a47,.a50,.a52,.a54,.a56,.a57,.a59,.a61,.a63{
+        background-color: brown;
+    }
+     .sec1,.sec2,.sec3,.sec4,.sec5,.sec6,.sec7,.sec8{
+        display:flex;
+        flex-direction: row;
+        height: 100px;
+        width:800px;
+
+    } 
+    
+    
+
+</style>
+
+</head>
+<body>
+    <div class="main">
+        <!-- <div class="a1">1</div> <div class="a2">2</div><div class="a3">3</div> <div class="a4"></div> <div class="a5"></div> <div class="a6"></div> <div class="a7"></div> <div class="a8"></div>
+        <div class="b1">2</div>  <div class="b2"></div> <div class="b3"></div> <div class="b4"></div> <div class="b5"></div> <div class="b6"></div> <div class=""></div> <div class=""></div>
+        <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div>
+        <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div>
+        <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div>
+        <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div>
+        <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div>
+        <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> <div class=""></div> -->
+
+       <!-- <div class="a"><img src=""></div>  <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> 
+        <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div>  
+        <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div> <div class="a"><img src=""></div> <div class="b"><img src=""></div>
+        <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div>
+        <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div>
+        <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div>
+        <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div>
+        <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> <div class="a"><img src=""></div> -->
+        <div class="sec1">
+        <div class=a1><img src="Chesspng/b_rook.png"></div>
+        <div class=a2><img src="Chesspng/b_knight.png"></div>
+        <div class=a3><img src="Chesspng/b_bishop.png"></div>
+        <div class=a4><img src="Chesspng/b_queen.png"></div>
+        <div class=a5><img src="Chesspng/b_king.png"></div>
+        <div class=a6><img src="Chesspng/b_bishop.png"></div>
+        <div class=a7><img src="Chesspng/b_king.png"></div>
+        <div class=a8><img src="Chesspng/b_rook.png"></div>
+    </div>
+    <div class="sec2">
+        <div class=a9><img src="Chesspng/b_pawn.png"></div>
+        <div class=a10><img src="Chesspng/b_pawn.png"></div>
+        <div class=a11><img src="Chesspng/b_pawn.png"></div>
+        <div class=a12><img src="Chesspng/b_pawn.png"></div>
+        <div class=a13><img src="Chesspng/b_pawn.png"></div>
+        <div class=a14><img src="Chesspng/b_pawn.png"></div>
+        <div class=a15><img src="Chesspng/b_pawn.png"></div>
+        <div class=a16><img src="Chesspng/b_pawn.png"></div>
+        </div>
+        <div class="sec3">
+
+        <div class=a17></div>
+        <div class=a18></div>
+        <div class=a19></div>
+        <div class=a20></div>
+        <div class=a21></div> 
+        <div class=a22></div>
+        <div class=a23></div>
+        <div class=a24></div>
+    </div>
+    <div class="sec4">
+        <div class=a25></div>
+        <div class=a26></div>
+        <div class=a27></div>
+        <div class=a28></div>
+        <div class=a29></div>
+        <div class=a30></div>
+        <div class=a31></div>
+        <div class=a32></div>
+    </div>
+    <div class="sec5">
+        <div class=a33></div>
+        <div class=a34></div>
+        <div class=a35></div>
+        <div class=a36></div>
+        <div class=a37></div>
+        <div class=a38></div>
+        <div class=a39></div>
+        <div class=a40></div>
+        </div>
+        <div class="sec6">
+        <div class=a41></div>
+        <div class=a42></div>
+        <div class=a43></div>
+        <div class=a44></div>
+        <div class=a45></div>
+        <div class=a46></div>
+        <div class=a47></div>
+        <div class=a48></div>
+    </div>
+    <div class="sec7">
+        <div class=a49><img src="Chesspng/w_pawn.png"></div>
+        <div class=a50><img src="Chesspng/w_pawn.png"></div>
+        <div class=a51><img src="Chesspng/w_pawn.png"></div>
+        <div class=a52><img src="Chesspng/w_pawn.png"></div>
+        <div class=a53><img src="Chesspng/w_pawn.png"></div>
+        <div class=a54><img src="Chesspng/w_pawn.png"></div>
+        <div class=a55><img src="Chesspng/w_pawn.png"></div>
+        <div class=a56><img src="Chesspng/w_pawn.png"></div>
+    </div>
+    <div class sec="8">
+        <div class=a57><img src="Chesspng/w_rook.png"></div>
+        <div class=a58><img src="Chesspng/w_knight.png"></div>
+        <div class=a59><img src="Chesspng/w_bishop.png"></div>
+        <div class=a60><img src="Chesspng/w_queen.png"></div>
+        <div class=a61><img src="Chesspng/w_king.png"></div>
+        <div class=a62><img src="Chesspng/w_bishop.png"></div>
+        <div class=a63><img src="Chesspng/w_knight.png"></div>
+        <div class=a64><img src="Chesspng/w_rook.png"></div> 
+
+
+
+    </div>
+
+    
+</body>
+</html>

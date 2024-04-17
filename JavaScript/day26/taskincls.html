@@ -1,0 +1,34 @@
+<script>
+    var tam,eng,mat,sci,soc,tot,avg;
+    tam=parseInt(prompt("enter tamil marks"));
+    eng=parseInt(prompt("enter english marks"));
+    mat=parseInt(prompt("enter math marks"));
+    sci=parseInt(prompt("enter science marks"));
+    soc=parseInt(prompt("enter social"));
+    tot=tam+eng+mat+sci+soc;
+    avg=tot/5;
+    console.log("total"+tot);
+    console.log("percetage"+avg);
+
+    (avg>90)?console.log("Grade :A"):(avg>=80)?console.log("Grade:b") :(avg>=70)?console.log("Grade:c"):(avg>=60)?console.log("Grade:d"):(avg>=50)?console.log("Grade:e") : console.log("your grade is f");
+
+
+    /*
+    above 90 a
+    80 to 90 b
+    70 to 80 c
+    60 to 70 d
+    50 to 60 e
+    below 50 f
+    */
+
+
+    
+
+
+  
+    (tam>=35)? (eng>=35)?(mat>=35)? (sci>=35)? (soc>=35) ?console.log("pass all"):console.log("fail soc") :console.log("fail sci") :console.log("fail mat"): console.log("fail eng"):console.log("fail tam");
+
+
+    
+</script>

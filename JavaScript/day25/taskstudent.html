@@ -1,0 +1,21 @@
+<script>
+    var name,regno;
+    var tam,eng,math,sci,soc;
+    var total,avg;
+
+    name=prompt("Enter ur name");
+    regno=prompt("enter ur register number");
+    tam=parseFloat(prompt("enter marks tam"));
+    eng=parseFloat(prompt("eng"));
+    mat=parseFloat(prompt("maths"));
+    sci=parseFloat(prompt("scince"));
+    soc=parseFloat(prompt("social science"));
+    total=tam+eng+mat+sci+soc;
+    avg=total/5;
+    console.log("name:"+name);
+    console.log("reg.no:"+regno);
+    console.log("Your marks:- "+" tam:"+tam+"; eng:"+eng+"; mat:"+mat+"; sci:"+sci+"; soc"+soc);
+    console.log("Total"+total);
+    console.log("avg"+avg);
+    (avg>=60)? console.log("good student"):console.log("try better"); 
+</script>

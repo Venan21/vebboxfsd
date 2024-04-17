@@ -1,0 +1,36 @@
+<script>
+    var w,h,bmi;
+    w=parseFloat(prompt("enter weight in kg"));
+    h=parseFloat(prompt("enter your height in cm"));
+    h=h/100;
+    console.log("weight "+w+" height "+h+" h2: "+(h*h));
+    bmi=w/(h*h);
+    console.log("Your bmi is "+bmi);
+    var idealweight,weireduce;
+
+
+
+    (bmi<18.5)? console.log("Below bmi 18.5 is Under Weight . u have to increase your weight by"+ parseFloat( 18.5*(h*h)-w)):(bmi<25)? console.log("18.5 to 24.9 is healthy") :(bmi<30)?console.log("25 to 29.9 is over weight"):(bmi>=30)?console.log("30 and above is obese"):console.log('error');
+     
+
+
+    //went from smalest (i.e) in ascending 
+    /* <18.5
+        <25
+        <30
+    bmi>= 30
+    */
+   
+
+
+
+    //below 18.5    is uw
+    //18.5 to 24.9  is healthy
+    //25 - 29.9     is over w
+    //30 & abv      is obese
+
+    //below 18.5 uw
+    //below 25 is healthy
+    //below 30 is o w
+    //30 an above is obese
+</script>

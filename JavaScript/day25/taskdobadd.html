@@ -1,0 +1,40 @@
+<script>
+    var dd=parseInt(prompt("Enter date dd"));
+    var mm=parseInt(prompt("enter month mm"));
+    var yyyy=parseInt(prompt("enter yyyy"));
+    var add,rem;
+    add=0;
+    rem=parseInt(dd%10);
+    add=add+rem;
+    rem=parseInt(dd/10);
+    add=add+rem;
+    // console.log(add);
+
+    rem=parseInt(mm%10);
+    add=add+rem;
+    rem=parseInt(mm/10);
+    add=add+rem;
+    // console.log(add);
+
+    rem=parseInt(yyyy%10);
+    add=add+rem;
+    yyyy=yyyy/10;
+    // console.log(add);
+
+    rem=parseInt(yyyy%10);
+    add=add+rem;
+    yyyy=yyyy/10;
+    // console.log(add);
+
+    rem=parseInt(yyyy%10);
+    add=add+rem;
+    yyyy=parseInt(yyyy/10);
+    // console.log(add);
+
+    add=add+yyyy;
+    console.log(add);
+
+
+
+
+</script>

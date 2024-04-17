@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+    .main{
+        display:grid;
+        grid-template-rows: 100px  100px 100px 100px 100px 100px 100px 100px;
+        grid-template-columns: 100px  100px 100px 100px 100px 100px 100px 100px;
+        height:800px; width:800px;
+        border: 1px solid brown;
+    }
+    .a1,.a3,.a5,.a7,.a10,.a12,.a14,.a16,.a17,.a19,.a21,.a23,.a26,.a28,.a30,.a32,.a33,.a35,.a37,.a39,.a42,.a44,.a46,.a48,.a49,.a51,.a53,.a55,.a58,.a60,.a62,.a64{
+        background-color: white;
+
+    }
+
+    .a2,.a4,.a6,.a8,.a9,.a11,.a13,.a15,.a18,.a20,.a22,.a24,.a25,.a27,.a29,.a31,.a34,.a36,.a38,.a40,.a41,.a43,.a45,.a47,.a50,.a52,.a54,.a56,.a57,.a59,.a61,.a63{
+        background-color: brown;
+    }
+    .a1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .a2{
+        grid-row: 1/2;grid-column:2/3;
+}
+.a3{
+    grid-row: 1/2;grid-column:3/4;
+}
+.a4{
+    grid-row: 1/2;grid-column:4/5;
+}
+.a5{
+    grid-row: 1/2;grid-column:5/6;
+}
+.a6{
+    grid-row: 1/2;grid-column: 6/7;
+}
+.a7{
+    grid-row: 1/2;grid-column:7/8;
+}
+.a8{
+    grid-row: 1/2;grid-column:8/9;
+}
+.a9{
+    grid-row: 2/3;grid-column: 1/2;
+}
+.a10{
+    grid-row: 2/3;grid-column:2/3;
+}
+.a11{
+    grid-row: 2/3;grid-column:3/4;
+}
+.a12{
+    grid-row: 2/3;grid-column:4/5;
+}
+.a13{
+    grid-row: 2/3;grid-column:5/6;
+    
+}
+.a14{
+    grid-row: 2/3;grid-column: 6/7;
+}
+.a15{
+    grid-row: 2/3;grid-column:7/8;
+}
+.a16{
+    grid-row: 2/3;grid-column:8/9;
+}
+.a17{
+    grid-row: 3/4;grid-column: 1/2;
+}
+.a18{
+    grid-row: 3/4;grid-column:2/3;
+}
+.a19{
+    grid-row: 3/4;grid-column:3/4;
+}
+.a20{
+    grid-row: 3/4;grid-column:4/5;
+}
+.a21{
+    grid-row: 3/4;grid-column:5/6;
+}
+.a22{
+    grid-row: 3/4;grid-column: 6/7;
+}
+.a23{
+    grid-row: 3/4;grid-column:7/8;
+}
+.a24{
+    grid-row: 3/4;grid-column:8/9;
+}
+.a25{
+    grid-row: 4/5;grid-column: 1/2;
+}
+.a26{
+    grid-row: 4/5;grid-column:2/3;
+}
+.a27{
+    grid-row: 4/5;grid-column:3/4;
+}
+.a28{
+    grid-row: 4/5;grid-column:4/5;
+}
+.a29{
+    grid-row: 4/5;grid-column:5/6;
+}
+.a30{
+    grid-row: 4/5;grid-column: 6/7;
+}
+.a31{
+    grid-row: 4/5;grid-column:7/8;
+}
+.a32{
+    grid-row: 4/5;grid-column:8/9;
+}
+.a33{
+    grid-row: 5/6;grid-column: 1/2;
+}
+.a34{
+    grid-row: 5/6;grid-column:2/3;
+}
+.a35{
+    grid-row: 5/6;grid-column:3/4;
+}
+.a36{
+    grid-row: 5/6;grid-column:4/5;
+}
+.a37{
+    grid-row: 5/6;grid-column:5/6;
+}
+.a38{
+    grid-row: 5/6;grid-column: 6/7;
+}
+.a39{
+    grid-row: 5/6;grid-column:7/8;
+}
+.a40{
+    grid-row: 5/6;grid-column:8/9;
+}
+.a41{
+    grid-row: 6/7;grid-column: 1/2;
+}
+.a42{
+    grid-row: 6/7;grid-column:2/3;
+}
+.a43{
+    grid-row: 6/7;grid-column:3/4;
+}
+.a44{
+    grid-row: 6/7;grid-column:4/5;
+}
+.a45{
+    grid-row: 6/7;grid-column:5/6;
+}
+.a46{
+    grid-row: 6/7;grid-column: 6/7;
+}
+.a47{
+    grid-row: 6/7;grid-column:7/8;
+}
+.a48{
+    grid-row: 6/7;grid-column:8/9;
+}
+.a49{
+    grid-row: 7/8;grid-column: 1/2;
+}
+.a50{
+    grid-row: 7/8;grid-column:2/3;
+}
+.a51{
+    grid-row: 7/8;grid-column:3/4;
+}
+.a52{
+    grid-row: 7/8;grid-column:4/5;
+}
+.a53{
+    grid-row: 7/8;grid-column:5/6;
+}
+.a54{
+    grid-row: 7/8;grid-column: 6/7;
+}
+.a55{
+    grid-row: 7/8;grid-column:7/8;
+}
+.a56{
+    grid-row: 7/8;grid-column:8/9;
+}
+.a57{
+    grid-row: 8/9;grid-column: 1/2;
+}
+.a58{
+    grid-row: 8/9;grid-column:2/3;
+}
+.a59{
+    grid-row: 8/9;grid-column:3/4;
+}
+.a60{
+    grid-row: 8/9;grid-column:4/5;
+}
+.a61{
+    grid-row: 8/9;grid-column:5/6;
+}
+.a62{
+    grid-row: 8/9;grid-column: 6/7;
+}
+.a63{
+    grid-row: 8/9;grid-column:7/8;
+}
+.a64{
+    grid-row: 8/9;grid-column:8/9;
+}
+    
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class=a1><img src="Chesspng/b_rook.png"></div>
+        <div class=a2><img src="Chesspng/b_knight.png"></div>
+        <div class=a3><img src="Chesspng/b_bishop.png"></div>
+        <div class=a4><img src="Chesspng/b_queen.png"></div>
+        <div class=a5><img src="Chesspng/b_king.png"></div>
+        <div class=a6><img src="Chesspng/b_bishop.png"></div>
+        <div class=a7><img src="Chesspng/b_king.png"></div>
+        <div class=a8><img src="Chesspng/b_rook.png"></div>
+        <div class=a9><img src="Chesspng/b_pawn.png"></div>
+        <div class=a10><img src="Chesspng/b_pawn.png"></div>
+        <div class=a11><img src="Chesspng/b_pawn.png"></div>
+        <div class=a12><img src="Chesspng/b_pawn.png"></div>
+        <div class=a13><img src="Chesspng/b_pawn.png"></div>
+        <div class=a14><img src="Chesspng/b_pawn.png"></div>
+        <div class=a15><img src="Chesspng/b_pawn.png"></div>
+        <div class=a16><img src="Chesspng/b_pawn.png"></div>
+        <div class=a17></div>
+        <div class=a18></div>
+        <div class=a19></div>
+        <div class=a20></div>
+        <div class=a21></div>
+        <div class=a22></div>
+        <div class=a23></div>
+        <div class=a24></div>
+        <div class=a25></div>
+        <div class=a26></div>
+        <div class=a27></div>
+        <div class=a28></div>
+        <div class=a29></div>
+        <div class=a30></div>
+        <div class=a31></div>
+        <div class=a32></div>
+        <div class=a33></div>
+        <div class=a34></div>
+        <div class=a35></div>
+        <div class=a36></div>
+        <div class=a37></div>
+        <div class=a38></div>
+        <div class=a39></div>
+        <div class=a40></div>
+        <div class=a41></div>
+        <div class=a42></div>
+        <div class=a43></div>
+        <div class=a44></div>
+        <div class=a45></div>
+        <div class=a46></div>
+        <div class=a47></div>
+        <div class=a48></div>
+        <div class=a49><img src="Chesspng/w_pawn.png"></div>
+        <div class=a50><img src="Chesspng/w_pawn.png"></div>
+        <div class=a51><img src="Chesspng/w_pawn.png"></div>
+        <div class=a52><img src="Chesspng/w_pawn.png"></div>
+        <div class=a53><img src="Chesspng/w_pawn.png"></div>
+        <div class=a54><img src="Chesspng/w_pawn.png"></div>
+        <div class=a55><img src="Chesspng/w_pawn.png"></div>
+        <div class=a56><img src="Chesspng/w_pawn.png"></div>
+        <div class=a57><img src="Chesspng/w_rook.png"></div>
+        <div class=a58><img src="Chesspng/w_knight.png"></div>
+        <div class=a59><img src="Chesspng/w_bishop.png"></div>
+        <div class=a60><img src="Chesspng/w_queen.png"></div>
+        <div class=a61><img src="Chesspng/w_king.png"></div>
+        <div class=a62><img src="Chesspng/w_bishop.png"></div>
+        <div class=a63><img src="Chesspng/w_knight.png"></div>
+        <div class=a64><img src="Chesspng/w_rook.png"></div> 
+ 
+    </div>
+    
+</body>
+</html>
